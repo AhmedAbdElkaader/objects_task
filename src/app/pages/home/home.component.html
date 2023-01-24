@@ -1,0 +1,17 @@
+<section class="main">
+    <div class="container">
+        <h1>ALL POSTS</h1>
+        <div class="row">
+            <div [routerLink]="['/post_details', post.id]" class="col-4" *ngFor="let post of post_list">
+                <div class="post">
+                    <img src="{{post.image}}">
+                    <div>
+                        <h3 class="text-truncate">{{post.title}}</h3>
+                        <p class="text-truncate">{{post.body}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>

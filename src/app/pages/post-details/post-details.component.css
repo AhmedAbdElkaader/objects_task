@@ -1,0 +1,18 @@
+.comments img {
+    width: 50px;
+    margin-right: 10px
+}
+.comments .commentDetails{
+    border: 1px solid #e4e4e4;
+    display: flex;
+    padding: 5px ;
+    margin-bottom: 5px;
+    border-radius: 8px
+}
+.commentDetails .info p:first-child{
+    font-weight: bold;
+    margin-bottom: 1px
+}
+.commentDetails .info p:nth-child(2){
+    color: gray
+}

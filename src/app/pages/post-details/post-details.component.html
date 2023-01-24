@@ -1,0 +1,23 @@
+<section *ngIf="post_data">
+    <div class="container">
+        <div class="info mt-5">
+            <img [src]="post_data.image">
+            <h3>Title : {{post_data.title}}</h3>
+            <p>Description : {{post_data.body}}</p>
+        </div>
+        <hr>
+        <section class="comments">
+            <h3>All comments</h3>
+            <div class="commentDetails" *ngFor="let comment of comments">
+                <div>
+                    <img src="assets/user.png">
+                </div>
+                <div class="info">
+                    <p>{{comment.name}}</p>
+                    <p>{{comment.email}}</p>
+                    <p>{{comment.body}}</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</section>
